@@ -80,19 +80,19 @@ React-এ Parent Component থেকে Child Component-এ Props-এর মা�
 
 ---
 
-### ❓ What is React?
+### ❔ What is React?
 
 **React** হলো JavaScript-এর একটি জনপ্রিয় library, যা ব্যবহার করে সহজে interactive ও dynamic user interface (UI) তৈরি করা যায়। React-এ UI-কে ছোট ছোট reusable **Components**-এ ভাগ করা হয়, ফলে একই code বারবার ব্যবহার করা এবং website তৈরি ও পরিচালনা করা সহজ হয়।
 
 
 
-### ❓ What is JSX?
+### ❔ What is JSX?
 
 **JSX (JavaScript XML)** হলো JavaScript-এর একটি syntax extension, যা React-এ JavaScript code-এর মধ্যে HTML-এর মতো syntax ব্যবহার করে সহজে UI তৈরি করতে সাহায্য করে। এটি দেখতে HTML-এর মতো হলেও JSX-এর মাধ্যমে JavaScript expression-ও UI-এর মধ্যে ব্যবহার করা যায়।
 
 
 
-### ❓ What are Props?
+### ❔ What are Props?
 
 **Props (Properties)** হলো React-এর এমন একটি পদ্ধতি, যার মাধ্যমে Parent Component থেকে Child Component-এ data পাঠানো যায়। Props ব্যবহার করে একই Component-এ বিভিন্ন data প্রদর্শন করা সম্ভব। Child Component-এর মধ্যে Props read-only হিসেবে কাজ করে।
 
@@ -136,32 +136,7 @@ function Developer({ name, tech }) {
 
 Destructuring ব্যবহার করলে `props.name` ও `props.tech`-এর পরিবর্তে সরাসরি `name` ও `tech` লেখা যায়।
 
----
 
-
-
-
-
-
-
-
-<details>
-<summary>📌 Topics Covered</summary>
-
-
-```
-App.jsx
-Todo.jsx
-Actors.jsx
-Singers.jsx
-|| Developers.jsx
-|| Doctors.jsx
-Summary.jsx
-Library.jsx
-Book.jsx
-
-```
-</details>
 
 <br>
 
@@ -240,7 +215,7 @@ function Student() {
 
 
 <details>
-<summary>❔ What is a Component?</summary>
+<summary>📌 What is a Component?</summary>
 <br>
 
 > 🔠 **Naming Rule:** Component-এর নাম Capital Letter দিয়ে শুরু করতে হয়।
@@ -265,7 +240,7 @@ function Person() {
 }
 ```
 
-#### Calling here...
+#### ❔ Calling like this...
 
 ```
 <Person></Person>
@@ -281,7 +256,7 @@ function Person() {
 
 
 <details>
-<summary>⚙️ Reusable Components with Props</summary>
+<summary>📌 Reusable Components with Props</summary>
 
 React `props` allow us to pass data from a parent component to a child component.
 
@@ -315,7 +290,7 @@ function Developer(props) {
 
 
 <details>
-<summary>⚛️ React Fragment <>   </></summary>
+<summary>📌 React Fragment <>   </></summary>
 
 A **Fragment** lets you group multiple JSX elements without adding an extra DOM element.
 
@@ -340,30 +315,6 @@ function App() {
 </details>
 
 <br>
-
-
-
-
-### CamelCase in React
-
-React JSX uses camelCase for most event handlers and many attributes.
-
-| HTML | React (JSX) |
-|---|---|
-| `class` | `className` |
-| `onclick` | `onClick` |
-| `onchange` | `onChange` |
-| `onsubmit` | `onSubmit` |
-| `tabindex` | `tabIndex` |
-| `readonly` | `readOnly` |
-
-**Naming conventions:**
-- **camelCase:** `handleClick`, `firstName`
-- **PascalCase:** `MyComponent`, `UserProfile`
-- **Lowercase:** `div`, `button`, `p`
-
-**Note:** `className` replaces `class` in JSX, and event handlers use camelCase, such as `onClick`.
-
 
 
 
@@ -409,6 +360,7 @@ export default App;
 
 
 
+
 ### ❓ Conditional Rendering কী?
 
 
@@ -418,7 +370,7 @@ React-এ **Conditional Rendering** হলো নির্দিষ্ট শর
 
 
 <details>
-<summary>📌 Conditional Rendering > Example Component Usage</summary>
+<summary>📌 6 Ways to Implement Conditional Rendering</summary>
 
 ```jsx
 <Todo task="Learn React" isDone={true} time={30}></Todo>
@@ -593,7 +545,41 @@ export default function Todo({ task, isDone, time = 0 }) {
 **💡 Best Practice:** সাধারণ condition-এর জন্য `&&`, দুইটি বিকল্পের জন্য Ternary Operator এবং জটিল condition-এর জন্য `if-else` ব্যবহার করো।
 
 
-</details> <br>
+</details>
+
+
+<br>
+
+
+
+
+
+
+
+
+### 📌 CamelCase in React
+
+React JSX uses camelCase for most event handlers and many attributes.
+
+| HTML | React (JSX) |
+|---|---|
+| `class` | `className` |
+| `onclick` | `onClick` |
+| `onchange` | `onChange` |
+| `onsubmit` | `onSubmit` |
+| `tabindex` | `tabIndex` |
+| `readonly` | `readOnly` |
+
+**Naming conventions:**
+- **camelCase:** `handleClick`, `firstName`
+- **PascalCase:** `MyComponent`, `UserProfile`
+- **Lowercase:** `div`, `button`, `p`
+
+**Note:** `className` replaces `class` in JSX, and event handlers use camelCase, such as `onClick`.
+
+
+
+ <br>
 
 
 
